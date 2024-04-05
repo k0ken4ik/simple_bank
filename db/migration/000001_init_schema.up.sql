@@ -34,7 +34,7 @@ CREATE INDEX ON "entries" ("account_id");
 CREATE INDEX ON "transfers" ("from_account_id");
 
 CREATE INDEX ON "transfers" ("to_account_id");
-s
+
 CREATE INDEX ON "transfers" ("from_account_id", "to_account_id");
 
 COMMENT ON COLUMN "entries"."amount" IS 'can be negative or positive';
